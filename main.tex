@@ -1,0 +1,115 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{import}
+\usepackage{svg}
+\usepackage{amsmath}
+
+\title{Título tentativo de la tesis}
+\author{email@utec.edu.pe}
+\date{Sep 2021}
+
+\usepackage{natbib}
+% \bibliographystyle{abbrvnat}
+\bibliographystyle{elsarticle-num-names}
+\usepackage{graphicx}
+
+%no corte palabras
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \Large
+        \textbf{UNIVERSIDAD DE INGENIERÍA Y TECNOLOGÍA}
+        \vspace*{1cm}
+        
+        \large
+        \textbf{CARERA DE CIENCIA DE LA COMPUTACIÓN}
+        \vspace*{1cm}
+        
+        \begin{figure}[htbp]
+            \centering
+            \includegraphics[width=7cm,height=\textheight,keepaspectratio]{images/LOGO_UTEC}
+        \end{figure}
+
+            
+        \LARGE
+        \textbf{Título de la tesis}
+            
+        \vspace{1.0cm}
+        \Large
+        
+        %\vspace{1.5cm}
+            
+        \textbf{AUTOR}
+        \vspace{0.5cm}
+        \\Nombre del Autor
+        \vfill
+        
+        \vspace{1.0cm}
+        
+        \textbf{ASESOR}
+        \vspace{0.5cm}
+        \\Nombre del Asesor
+        \vfill
+        \vspace{0.8cm}
+        \Large
+        
+        Lima - Perú
+        \\
+        2021
+            
+    \end{center}
+\end{titlepage}
+
+
+\tableofcontents
+
+\chapter{Introducción}
+\import{}{introduction.tex}
+
+\section{Introducción}
+\section{Descripción del problema}
+%\section{Planteamiento del problema}
+\import{}{problem.tex}
+
+\section{Justificación}
+
+
+\section{Aporte}
+
+\chapter{Conceptos Preliminares}
+\import{}{prevKnowledge.tex}
+
+\chapter{Estado del arte}
+\import{}{stateOfTheArt.tex}
+\hline
+\LARGE
+Hasta aquí la evaluación parcial por parte de un jurado invitado
+
+\hline 
+
+\chapter{Propuesta}
+\import{}{proposal.tex}
+
+\chapter{Experimentos Iniciales}
+\import{}{experiments.tex}
+
+\chapter{Conclusiones Previas}
+\import{}{conclusions.tex}
+\hline 
+\LARGE
+Hasta aquí la evaluación final  por parte de un jurado invitado
+
+\hline 
+
+\addcontentsline{toc}{chapter}{Referencias}
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}
