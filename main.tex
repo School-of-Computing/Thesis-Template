@@ -4,14 +4,17 @@
 \usepackage{import}
 \usepackage{svg}
 \usepackage{amsmath}
+\usepackage{cite}
 
 \title{Título tentativo de la tesis}
 \author{email@utec.edu.pe}
 \date{Sep 2021}
 
-\usepackage{natbib}
+\usepackage{apacite}
+
+%\usepackage{natbib}
 % \bibliographystyle{abbrvnat}
-\bibliographystyle{elsarticle-num-names}
+%\bibliographystyle{elsarticle-num-names}
 \usepackage{graphicx}
 
 %no corte palabras
@@ -30,12 +33,12 @@
         \vspace*{1cm}
         
         \large
-        \textbf{CARERA DE CIENCIA DE LA COMPUTACIÓN}
+        \textbf{CARERA DE CIENCIAS DE LA COMPUTACIÓN}
         \vspace*{1cm}
         
         \begin{figure}[htbp]
             \centering
-            \includegraphics[width=7cm,height=\textheight,keepaspectratio]{images/LOGO_UTEC}
+            \includegraphics[width=6.5cm,height=\textheight,keepaspectratio]{images/logo}
         \end{figure}
 
             
@@ -69,47 +72,68 @@
 \end{titlepage}
 
 
+\chapter*{Resumen}
+\import{}{resumen.tex}
+
+\chapter*{Abstract}
+\import{}{abstract.tex}
+
 \tableofcontents
 
 \chapter{Introducción}
-\import{}{introduction.tex}
 
 \section{Introducción}
+\import{}{introduction.tex}
+
 \section{Descripción del problema}
+\import{}{problema.tex}
+
 %\section{Planteamiento del problema}
 \import{}{problem.tex}
+%\section{Justificación}
 
-\section{Justificación}
+\section{Objetivos}
+\import{}{objetivos.tex}
 
-
-\section{Aporte}
-
-\chapter{Conceptos Preliminares}
+\chapter{Marco Teórico}
 \import{}{prevKnowledge.tex}
 
-\chapter{Estado del arte}
+\chapter{Revisión de la literatura}
 \import{}{stateOfTheArt.tex}
-\hline
-\LARGE
-Hasta aquí la evaluación parcial por parte de un jurado invitado
+%\hline
+%\LARGE
+%Hasta aquí la evaluación parcial por parte de un jurado invitado
 
-\hline 
+%\hline 
 
-\chapter{Propuesta}
+\chapter{Metodología}
 \import{}{proposal.tex}
 
-\chapter{Experimentos Iniciales}
+\section{Descripción de la Metodología}
+
+\section{Alcances y Limitaciones}
+
+\chapter{Experimentaciones y Resultados}
 \import{}{experiments.tex}
 
-\chapter{Conclusiones Previas}
+\chapter{Conclusiones y Trabajos Futuros}
 \import{}{conclusions.tex}
-\hline 
-\LARGE
-Hasta aquí la evaluación final  por parte de un jurado invitado
+%\hline 
+%\LARGE
+%Hasta aquí la evaluación final  por parte de un jurado invitado
 
-\hline 
+\section{Conclusiones}
+
+\section{Trabajos Futuros}
+
+%\hline 
 
 \addcontentsline{toc}{chapter}{Referencias}
-\bibliographystyle{plain}
-\bibliography{references}
+
+%\bibliographystyle{plain}
+
+\bibliographystyle{apacite}
+\bibliography{references.bib}
+
+
 \end{document}
