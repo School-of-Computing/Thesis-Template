@@ -84,7 +84,8 @@
 
 \tableofcontents
 
-\chapter{Introducción}
+%---------- Capítulo  Contexto y Motivación -------
+\chapter{Contexto y Motivación}
 
 \section{Introducción}
 \import{}{introduction.tex}
@@ -92,34 +93,61 @@
 \section{Descripción del problema}
 \import{}{problema.tex}
 
-%\section{Planteamiento del problema}
-\import{}{problem.tex}
-%\section{Justificación}
+\section{Justificación}
+\import{}{justificacion.tex}
 
 \section{Objetivos}
 \import{}{objetivos.tex}
 
+%--------------------------------------------------
+
+%---------- Capítulo  Marco Teórico ---------------
 \chapter{Marco Teórico}
 \import{}{prevKnowledge.tex}
+%--------------------------------------------------
 
-\chapter{Revisión de la literatura}
+%--------------------------------------------------
+%---------- Capítulo  Revisión Lit. ---------------
+\chapter{Revisión de la Literatura}
 \import{}{stateOfTheArt.tex}
 %\hline
 %\LARGE
 %Hasta aquí la evaluación parcial por parte de un jurado invitado
 
 %\hline
+%--------------------------------------------------
 
+%---------- Capítulo  Metodología -----------------
 \chapter{Metodología}
 \import{}{proposal.tex}
 
+\section{Descripción de la Metodología}
+\import{}{methodology.tex}
 
+\section{Alcances y Limitaciones}
+\import{}{alcances.tex}
+
+
+%--------------------------------------------------
+
+%---------- Capítulo  Experimentación -----------------
 
 \chapter{Experimentaciones y Resultados}
 \import{}{experiments.tex}
 
+%--------------------------------------------------
+
+%---------- Capítulo  Conclusiones -----------------
+
 \chapter{Conclusiones y Trabajos Futuros}
+\import{}{Prevconclusions.tex}
+
+\section{Conclusiones}
 \import{}{conclusions.tex}
+
+\section{Trabajos Futuros}
+\import{}{futuros.tex}
+
 %\hline
 %\LARGE
 %Hasta aquí la evaluación final  por parte de un jurado invitado
@@ -134,8 +162,17 @@
 
 %\bibliographystyle{plain}
 
+\nocite{zobel}
+\nocite{swales}
+
 \bibliographystyle{apacite}
 \bibliography{references.bib}
+
+\newpage
+
+\chapter*{Anexos}
+\import{}{anexos.tex}
+
 
 
 \end{document}
