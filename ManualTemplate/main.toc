@@ -1,0 +1,5 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Bienvenidos}{2}{section.1}%
+\contentsline {section}{\numberline {2}Las secciones y los cursos}{3}{section.2}%
+\contentsline {section}{\numberline {3}Evaluaciones y rúbricas}{4}{section.3}%
+\contentsline {section}{\numberline {4}Áreas de investigación y profesores}{5}{section.4}%
